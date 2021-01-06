@@ -11,10 +11,11 @@ private:
     int _maxID;
 public:
     EmployeeData();
-    int PushBack(Employee e);
+    int PushBack(Employee e);                  //Them nhan vien
     int GetmaxID();
-    Employee GetEmployeeData(int i);
-    Employee DeleteEmployeeData(int i);
+    Employee GetEmployeeData(int& i);
+    int DeleteEmployeeData(int& i);           //Xoa nhan vien
+    Employee EditEmployeeData(int& i);
 };
 
 #endif
